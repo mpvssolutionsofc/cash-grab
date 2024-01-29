@@ -1,0 +1,424 @@
+/*Mexendo com o dom*/
+@font-face {
+    font-family:'roboto';
+    src: url(fontes/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+}
+
+#corpo{
+    background-color:rgba(29, 30, 44, 1);
+}
+
+h2 {
+    
+color: white;
+font-size: smaller;
+font-family: Arial;
+text-align: center;
+
+}
+h1{
+    font-size: medium;
+font-family: arial;
+    color: white;
+    text-align: center;
+}
+p{
+    font-size: medium;
+font-family: arial;
+    color: white;
+   position: relative;
+   left: 10vw;
+
+    
+}
+
+.conteiner > img{
+border-radius: 10px 10px 10px 10px;
+}
+#programadores {
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+    height: 350px;
+    max-width: 350px;
+    background: rgba(36, 38, 58, 1);
+    top: 10px;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+   
+}
+.conteiner{
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+left: 20%;
+position: relative;
+
+}
+
+h3{
+    font-size: small;
+    font-family: arial;
+    color: white;
+    text-align: center;
+    
+}
+a{
+    font-size: medium;
+    font-family: arial;
+    color: white;
+    text-align: center;
+}
+.tituloprogramadores {
+font-size:smaller;
+color: aliceblue;
+}
+
+footer{
+   position: relative;
+    color: white;
+    font-family: italic;
+    left: 15vw;
+    font-size: medium;
+    width: 80vw;
+    
+    
+}
+#paragrafo {
+
+left: 20%;
+}
+#sociais{
+    left: 25%;
+    position: relative;
+}
+/*Estilo do menu*/
+#caminhosMenu{
+    position: relative;
+    top: -38px;
+    right: 10%;
+    padding: 11px;
+}
+#teste{
+    height: 100vh;
+    position:fixed ;
+}
+#nameUser>h1{
+    font-size: 1.5rem;
+    position: relative; 
+    right: 10%;
+}
+#nameUser>h2{
+    font-size:revert;
+    position: relative;
+    top:10px;
+}
+.menu{
+    width: 10%;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 713px;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+    position: fixed;
+}
+
+.menu>ul>li>a{
+    color: #fff;
+}
+#logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: -331px;
+    left: 133%;
+}
+.imgsMenu{
+    width: 40px;
+    height:40px;
+    left: 50%;
+    position: relative;
+}
+.imgMenuCell{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 90vw;
+    top: 7px;
+    visibility: hidden;
+}
+.elementoMenu:hover img{
+    /*Onde faz a imagem sumir*/
+    visibility: hidden;
+}
+.textoInicio{
+    color: #fff;
+    position: relative;
+    top:64px;
+    left: 50%;
+    visibility:hidden;
+}
+.elementoMenu:hover .textoInicio{
+    /*Onde faz o texto aparecer*/
+    visibility: visible;
+}
+.textoDespesas{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoDespesas{
+    visibility: visible;
+}
+.textoExtrato{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoExtrato{
+    visibility: visible;
+}
+.textoSimulacao{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoSimulacao{
+    visibility: visible;
+}
+.textoNoticias{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoNoticias{
+    visibility: visible;
+}
+.textoSobre{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover #textoSobre{
+    visibility: visible;
+}
+.visibilidadeMenuCell{
+    visibility:visible;
+    width: 80vw;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 100vh;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+    z-index: 1;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+#desenhodografico{
+ width: 20%;
+ justify-content: space-around;
+ flex-direction: row;
+ left: 50%;
+ position: relative;
+ bottom: 110%;
+ 
+}
+canvas{
+    position: relative;
+}
+.textoMenucelular{
+    visibility: visible;
+    position: relative;
+    left: 22vw;
+    top: 7vh;
+    color: #fff;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+#legendaSaude{
+    background-color: #D4CD08; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh;
+}
+#legendaEducacao{
+    background-color: #11BD2E;
+    position: relative;
+    top: -25px;
+    width: 2vw;
+    left: 5vw;
+    height: 1vh;
+}
+#legendaLazer{
+    background-color: #089AC7; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh
+}
+#legendaOutros{
+    background-color:#9116D1; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh
+}
+/*Parte da responsividade*/
+@media only screen and (min-width: 900px) and (max-width:1800px){
+    .menu{
+        height: 100vh;
+    }
+    #logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: 10px;
+    left: 53%;
+}
+
+}
+@media only screen and (width:820px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+    }
+    main{
+        position: relative;
+        right: 12em;
+        top: 10vh;
+     }
+     #caminhosMenu{
+        right: 20vw;
+        top: 7vh;
+     }
+     #logo{
+        width: 50px;
+        height: 50px;
+        top: -69vw;
+        left: 57%;
+        visibility: visible;
+     }
+     #financas{
+        width: 89vw;
+     }
+     #caminhosMenus>a{
+        visibility: hidden;
+    }
+    .imgMenuCell{
+        visibility: visible;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 93vw;
+        top: 7px;
+    }
+    .menuCell{
+        width: 30vw;
+    }
+    #limites{
+        width: 40vw;
+    }
+    #rendas{
+        left: 22vw;
+        width: 46vw;   
+    }
+    .posicaoLegenda{
+        left: 815vw;
+    }
+    #desenhodografico {
+        width: 30%;
+        justify-content: space-around;
+        flex-direction: row;
+        left: 50%;
+        position: relative;
+        bottom: 23vh;
+    }
+    .textoMenucelular{
+        left: 13vw;
+        top: 5vh;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width:700px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+    }
+    main{
+        left: -2vh;
+    }
+    #caminhosMenu{
+        right: -6vw;
+        top: -6vh;
+    }
+    #caminhosMenus>a{
+        visibility: hidden;
+    }
+   
+}
+#renato {
+visibility: hidden;
+}
+#principal {
+width:80vw;
+}
+/*Celular*/
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+    }
+    main{
+        left: -2vh;
+    }
+    #teste{
+        position: fixed;
+        height: 100%;
+        
+    }
+   
+    #caminhosMenu{
+        right: -6vw;
+        top: -6vh;
+    }
+    #caminhosMenus>a{
+        visibility: hidden;
+    }
+    
+     .imgMenuCell{
+         visibility: visible;
+         z-index: 1;
+         position: fixed;
+     }
+  
+   .conteiner{
+    width: 80vw;
+    display: block;
+   }
+   
+     
+        
+}

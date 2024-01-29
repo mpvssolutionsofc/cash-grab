@@ -1,0 +1,409 @@
+/*Mexendo com o dom*/
+@font-face {
+    font-family:'roboto';
+    src: url(fontes/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    position: relative;
+    top: 23px;
+    margin-left: 250px;
+    font-family: 'roboto','Arial';
+}
+#teste{
+    position:fixed;
+}
+#corpo{
+    background-color:rgba(29, 30, 44, 1);
+}
+/*Mexendo com os IDs*/
+#nameUser{
+    display: flex;
+    justify-content: end;
+    margin-left: 12%;
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(36, 38, 58, 1);
+    color: #fff;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+
+
+
+/*mexendo com class*/
+.campos{
+    background: rgba(36, 38, 58, 1);
+    border-radius: 10px 10px 10px 10px;
+    color: #fff;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+.ocultarElemento{
+    visibility: hidden;
+}
+
+
+.estiloInputs{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #fff;
+    border-left-color:#fff ;
+    background-color: transparent;
+    color: #fff;
+    bottom: 1%;
+}
+.estiloBotao{
+    border-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    text-shadow: none;
+    color: aliceblue;
+    background: rgba(36, 38, 58, 1);;
+}
+
+/*Estilo do menu*/
+#caminhosMenu{
+    position: relative;
+    top: -38px;
+    right: 10%;
+    padding: 11px;
+}
+#teste{
+    height: 100vh;
+}
+#nameUser>h1{
+    font-size: 1.5rem;
+    position: relative; 
+    right: 10%;
+}
+#nameUser>h2{
+    font-size:revert;
+    position: relative;
+    top:10px;
+}
+.menu{
+    width: 10%;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 713px;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+.estiloLink{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu>ul>li>a{
+    color: #fff;
+}
+#logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: -331px;
+    left: 133%;
+}
+.imgsMenu{
+    width: 40px;
+    height:40px;
+    left: 50%;
+    position: relative;
+}
+.imgMenuCell{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 90vw;
+    top: 7px;
+    visibility: hidden;
+}
+.elementoMenu:hover img{
+    /*Onde faz a imagem sumir*/
+    visibility: hidden;
+}
+.textoInicio{
+    color: #fff;
+    position: relative;
+    top:64px;
+    left: 50%;
+    visibility:hidden;
+}
+.elementoMenu:hover .textoInicio{
+    /*Onde faz o texto aparecer*/
+    visibility: visible;
+}
+.textoDespesas{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoDespesas{
+    visibility: visible;
+}
+.textoExtrato{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoExtrato{
+    visibility: visible;
+}
+.textoSimulacao{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoSimulacao{
+    visibility: visible;
+}
+.textoNoticias{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoNoticias{
+    visibility: visible;
+}
+.textoSobre{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover #textoSobre{
+    visibility: visible;
+}
+.visibilidadeMenuCell{
+    visibility:visible;
+    width: 80vw;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 100vh;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+    z-index: 1;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+
+.textoMenucelular{
+    visibility: visible;
+    position: relative;
+    left: 22vw;
+    top: 7vh;
+    color: #fff;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+#primeiraNoticia{
+    position: relative;
+    right: 25vw;
+    top: 8vh;
+    width: 36vw;
+    padding: 10px;
+}
+#segundaNoticia{
+    position: relative;
+    right: 11em;
+    top: 8vh;
+    width: 36vw;
+    padding: 10px;
+
+}
+#terceiraNoticia{
+    position: relative;
+    top: 11vh;
+    width: 36vw;
+    padding: 10px;
+    
+
+}
+#categoria{
+    position: relative;
+    width: 20vw;
+    height: 4vh;
+}
+.estiloNoticias{
+    width: 532px;
+    height: 315px;
+    
+}
+article>h6{
+    color: #fff;
+}
+.ocultarNoticia{
+    visibility:hidden;
+}
+@media only screen and (min-width: 860px) and (max-width:1800px){
+    .menu{
+        height: 100vh;
+    }
+    #logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: 10px;
+    left: 53%;
+}
+
+}
+/*Tablete*/
+@media only screen and (min-width:481px) and (max-width:850px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        
+    }
+    #teste{
+        position: fixed;
+        height: 100%;
+        width: 35vw;
+    }
+    main{
+        position: relative;
+        right: 15em;
+        top: 10vh;
+     }
+     #caminhosMenu{
+        right: 0vw;
+        top: -17vh;
+    }
+     
+  
+     #caminhosMenus>a{
+        visibility: hidden;
+    }
+    .imgMenuCell{
+        visibility: visible;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 93vw;
+        top: 7px;
+    }
+    .menuCell{
+        width: 30vw;
+    }
+    #limites{
+        width: 89vw;
+        left: 5vw;
+    }
+ 
+    .textoMenucelular{
+        left: 13vw;
+        top: 5vh;
+    }
+    .estiloNoticias {
+        width: 87vw;
+        height: 315px;
+    }
+    #primeiraNoticia {
+        position: relative;
+        right: 17vw;
+        top: 8vh;
+        width: 94vw;
+        padding: 10px;
+    }
+    #segundaNoticia {
+        position: relative;
+        right: 17em;
+        top: 47vh;
+        width: 94vw;
+        padding: 10px;
+    }
+    #terceiraNoticia {
+        position: relative;
+        top: 50vh;
+        width: 94vw;
+        padding: 10px;
+        right: 0em;
+    }
+}
+/*Celular*/
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+    }
+    main{
+        left: -2vh;
+    }
+    #teste{
+        position: fixed;
+    }
+   
+    #caminhosMenu{
+        right: -6vw;
+        top: -6vh;
+    }
+    #caminhosMenus>a{
+        visibility: hidden;
+    }
+  
+    #desenhodografico{
+        width: 40vw;
+        justify-content: space-around;
+        flex-direction: row;
+        left: 53%;
+        position: relative;
+        top: -91%;
+
+     }
+     .imgMenuCell{
+         visibility: visible;
+         z-index: 1;
+     }
+
+     #categoria {
+        position: relative;
+        width: 32vw;
+        height: 4vh;
+        position: relative;
+        right: 14em;
+    }
+    .estiloNoticias {
+        width: 87vw;
+        height: 315px;
+    }
+    #primeiraNoticia {
+        position: relative;
+        right: 66vw;
+        top: 8vh;
+        width: 94vw;
+        padding: 10px;
+    }
+    #segundaNoticia {
+        position: relative;
+        right: 19em;
+        top: 62vh;
+        width: 94vw;
+        padding: 10px;
+    }
+    #terceiraNoticia {
+        position: relative;
+        top: 65vh;
+        width: 94vw;
+        padding: 10px;
+        right: 14em;
+    }
+ 
+}

@@ -1,0 +1,635 @@
+/*Mexendo com o dom*/
+@font-face {
+    font-family:'roboto';
+    src: url(fontes/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    position: relative;
+    top: 23px;
+    margin-left: 250px;
+    font-family: 'roboto','Arial';
+}
+#corpo{
+    background-color:rgba(29, 30, 44, 1);
+}
+/*Mexendo com os IDs*/
+#nameUser{
+    display: flex;
+    justify-content: end;
+    margin-left: 12%;
+    border-radius: 10px 0px 0px 10px;
+    background: rgba(36, 38, 58, 1);
+    color: #fff;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+#financas{
+    position: relative;
+    height: 250px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 12px;   
+}
+#financas>p{
+    margin-bottom: 10px;
+}
+#despesas{
+    width: 81%;
+    height: 250px;
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+}
+#limites{
+    width: 81%;
+    height: 329px;
+    position: relative;
+    top: 30px;
+    padding: 12px;
+    
+}
+#atual{
+    position: relative;
+    top: 2em;
+    font-size: 24px;
+    left: 2em;
+}
+#futuro{
+    left: 2em;
+    position: relative;
+    top: 2em;
+    font-size: 24px;
+}
+#limites>button{
+    position: relative;
+    left: 90%;
+    bottom: 10%;
+
+}
+#rendas{
+    width: 80vh;
+    height: 250px;
+    position: relative;
+    top: 50px;
+    padding: 12px;
+}
+#linhaDivisoria {
+    position: relative;
+    transform: rotate(90deg);
+    width: 10vh;
+    left: 15vw;
+}
+#despesasFuturas{
+    position: relative;
+    left: 20vw;
+    top: -13vh;
+}
+#rendas>button{
+    position: relative;
+    top: 71%;
+    left: 81%;
+}
+#suasfontes{
+    width: 81%;
+    position: relative;
+    height: 250px;
+    top: 50px;
+    padding: 12px;
+}
+#suasfontes>button{
+    position: relative;
+    top: 58%;
+    left: 81%;
+}
+#barradeprogresso{
+    width: 80%;
+    position: relative;
+    left: 29px;
+    top: 21px;
+    height: 18px;
+}
+#btnAddDespesas{
+    width: 30px;
+    height: 30px;
+}
+#textoLimite{
+    position: relative;
+    top: 1vh;
+}
+
+#btnEditar{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 4vh;
+}
+#cancelarEditar{
+    width: 30px;
+    height: 30px;
+    left: -10%;
+    top: 4vh;
+
+}
+#adiconarLimite{
+    position: relative;
+    left: 17vw;
+    top: -4vh;
+}
+#cancelarEditardois{
+    width: 30px;
+    height: 30px;
+    left: -10%;
+}
+
+#valorLimite{
+    position: relative;
+    left: 15%;
+    font-size: 29px;
+    top: 5vh;;
+}
+#somaDividas{
+    position: relative;
+    left: 15%;
+}
+/*mexendo com class*/
+.campos{
+    background: rgba(36, 38, 58, 1);
+    border-radius: 10px 10px 10px 10px;
+    color: #fff;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+.ocultarElemento{
+    visibility: hidden;
+}
+.mostraoX{
+    visibility: hidden;
+}
+
+.estiloInputs{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border-top: none;
+    border-right: none;
+    border-bottom-color: #fff;
+    border-left-color:#fff ;
+    background-color: transparent;
+    color: #fff;
+    bottom: 1%;
+}
+.estiloBotao{
+    border-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    text-shadow: none;
+    color: aliceblue;
+    background: rgba(36, 38, 58, 1);;
+}
+#camposDoLimite{
+    position: relative;
+    top: 11vh;
+    width: 20vw;
+    height: 0vh;
+}
+/*Estilo do menu*/
+#caminhosMenu{
+    position: relative;
+    top: -38px;
+    right: 10%;
+    padding: 11px;
+}
+#teste{
+    height: 100vh;
+}
+#nameUser>h1{
+    font-size: 1.5rem;
+    position: relative; 
+    right: 10%;
+}
+#nameUser>h2{
+    font-size:revert;
+    position: relative;
+    top:10px;
+}
+.menu{
+    width: 10%;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 713px;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+}
+
+.menu>ul>li>a{
+    color: #fff;
+}
+#logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: -331px;
+    left: 133%;
+}
+.imgsMenu{
+    width: 40px;
+    height:40px;
+    left: 50%;
+    position: relative;
+}
+.imgMenuCell{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 90vw;
+    top: 7px;
+    visibility: hidden;
+}
+.elementoMenu:hover img{
+    /*Onde faz a imagem sumir*/
+    visibility: hidden;
+}
+.textoInicio{
+    color: #fff;
+    position: relative;
+    top:64px;
+    left: 50%;
+    visibility:hidden;
+}
+.elementoMenu:hover .textoInicio{
+    /*Onde faz o texto aparecer*/
+    visibility: visible;
+}
+.textoDespesas{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoDespesas{
+    visibility: visible;
+}
+.textoExtrato{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoExtrato{
+    visibility: visible;
+}
+.textoSimulacao{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoSimulacao{
+    visibility: visible;
+}
+.textoNoticias{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover .textoNoticias{
+    visibility: visible;
+}
+.textoSobre{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    visibility: hidden;
+}
+.elementoMenu:hover #textoSobre{
+    visibility: visible;
+}
+.visibilidadeMenuCell{
+    visibility:visible;
+    width: 80vw;
+    float: left;
+    background: rgba(36, 38, 58, 1);
+    height: 100vh;
+    border-radius: 4px 10px 10px 4px;
+    box-shadow:  1px 1px 1px 1px #000;
+    z-index: 1;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+#desenhodografico{
+ width: 20%;
+ justify-content: space-around;
+ flex-direction: row;
+ left: 50%;
+ position: relative;
+ bottom: 110%;
+ 
+}
+canvas{
+    position: relative;
+}
+.textoMenucelular{
+    visibility: visible;
+    position: relative;
+    left: 22vw;
+    top: 7vh;
+    color: #fff;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+#legendaSaude{
+    background-color: #D4CD08; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh;
+}
+#legendaEducacao{
+    background-color: #11BD2E;
+    position: relative;
+    top: -25px;
+    width: 2vw;
+    left: 5vw;
+    height: 1vh;
+}
+#legendaLazer{
+    background-color: #089AC7; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh
+}
+#legendaOutros{
+    background-color:#9116D1; 
+    position: relative; 
+    top: -25px; 
+    width: 2vw; 
+    left: 3.5vw; 
+    height: 1vh
+}
+/*Parte da responsividade*/
+/*PC*/
+@media only screen and (min-width: 860px) and (max-width:1800px){
+    .menu{
+        height: 100vh;
+        position:fixed;
+    }
+    #logo{
+    position: relative;
+    width: 32px;
+    height: 26px;
+    top: 10px;
+    left: 53%;
+}
+
+}
+/*Tablete*/
+@media only screen and (min-width:481px) and (max-width:850px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+        
+    }
+    #teste{
+        position: fixed;
+        height: 100%;
+        width: 35vw;
+    }
+    main{
+        position: relative;
+        right: 15em;
+        top: 10vh;
+     }
+     #caminhosMenu{
+        right: 0vw;
+        top: -17vh;
+    }
+     
+     #logo{
+        width: 50px;
+        height: 50px;
+        top: -69vw;
+        left: 57%;
+        visibility: visible;
+     }
+     #financas{
+        width: 89vw;
+        position: relative;
+        left: 5vw;
+     }
+     #caminhosMenus>a{
+        visibility: hidden;
+    }
+    .imgMenuCell{
+        visibility: visible;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 93vw;
+        top: 7px;
+    }
+    .menuCell{
+        width: 30vw;
+    }
+    #limites{
+        width: 89vw;
+        left: 5vw;
+    }
+    #rendas{
+        left: -14vw;
+        width: 88vw;
+        top: 24em;
+    }
+    #legendaSaude {
+        background-color: #D4CD08;
+        position: relative;
+        top: -25px;
+        width: 2vw;
+        left: 7.5vw;
+        height: 1vh;
+    }
+    #legendaEducacao {
+        background-color: #11BD2E;
+        position: relative;
+        top: -25px;
+        width: 2vw;
+        left: 11vw;
+        height: 1vh;
+    }
+    #legendaLazer {
+        background-color: #089AC7;
+        position: relative;
+        top: -25px;
+        width: 2vw;
+        left: 6.5vw;
+        height: 1vh;
+    }
+    #legendaOutros {
+        background-color: #9116D1;
+        position: relative;
+        top: -25px;
+        width: 2vw;
+        left: 8.5vw;
+        height: 1vh;
+    }
+    .posicaoLegenda{
+        left: 815vw;
+    }
+    #camposDoLimite{
+        top: 5vh;
+    }
+    #desenhodografico {
+        width: 30%;
+        justify-content: space-around;
+        flex-direction: row;
+        left: 50%;
+        position: relative;
+        bottom: 23vh;
+    }
+    .textoMenucelular{
+        left: 13vw;
+        top: 5vh;
+    }
+    #limiteproposto{
+        position: relative;
+        left: 4em;
+        top: 1em;
+        
+    }
+
+    #adiconarLimite {
+        position: relative;
+        left: 39vw;
+        top: -1vh;
+    }
+    #despesasFuturas {
+        position: relative;
+        left: 25vw;
+        top: -8.5vh;
+        width: 65vw;
+    }
+}
+/*Celular*/
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .menu{
+        height: 100vh;
+        visibility:hidden;
+        transition-duration: 0.1s;
+        transition-delay: 0.1s;
+    }
+    main{
+        left: -2vh;
+    }
+    #teste{
+        position: fixed;
+    }
+    #camposDoLimite{
+        top: 9vh;
+        height: 20vh;
+    }
+    #cancelarEditar {
+        left: -48%;
+        
+    }
+    #atual{
+        top: 0em;
+    }
+    #futuro{
+        top:1em;
+    }
+    #adiconarLimite {
+        left: 65vw;
+        top: -3vh;
+    }
+    #limiteproposto{
+        position: relative;
+    left: 3em;
+    top: 1vh;
+    }
+    #caminhosMenu{
+        right: -6vw;
+        top: -6vh;
+    }
+    #caminhosMenus>a{
+        visibility: hidden;
+    }
+    #financas{
+        left: -56vw;
+        width: 95vw;
+    }
+    #limites{
+        right: 56vw;
+        width: 95vw;
+    }
+    #rendas{
+        top: 111%;
+        right: -1vh;
+        width: 94vw;
+        position: absolute;
+        z-index: 0;
+    }
+    .posicaoLegenda{
+        left: 20%;
+    }
+    #desenhodografico{
+        width: 40vw;
+        justify-content: space-around;
+        flex-direction: row;
+        left: 53%;
+        position: relative;
+        top: -91%;
+
+     }
+     .imgMenuCell{
+         visibility: visible;
+         z-index: 1;
+         position: fixed;
+     }
+     #despesasFuturas {
+        position: relative;
+        left: 0vw;
+        top: 0vh;
+    
+     }
+     #linhaDivisoria {
+        position: relative;
+        transform: rotate(0deg);
+        width: 43vh;
+        left: -2vw;
+    }
+     #logo{
+        width: 34px;
+        height: 38px;
+        top: -49%;
+        left: 78%;
+    
+     }
+     #legendaSaude{
+        left: 20%;
+    }
+    #legendaEducacao{
+        left: 20%;;
+    }
+    #legendaLazer{
+        left: 20%;
+    }
+    #legendaOutros{
+        left: 20%;
+    }
+    
+ 
+}
