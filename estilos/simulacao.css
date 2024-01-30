@@ -1,133 +1,204 @@
 /*Mexendo com o dom*/
 @font-face {
-    font-family:'roboto';
+    font-family: 'roboto';
     src: url(fontes/Roboto-Regular.ttf);
 }
-*{
+
+* {
     margin: 0;
 }
 
-main{
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     position: relative;
     top: 23px;
-    margin-left: 250px;
-    font-family: 'roboto','Arial';
+    margin-left: 15.5%;
+    font-family: 'roboto', 'Arial';
 }
-#corpo{
-    background-color:rgba(29, 30, 44, 1);
+
+#corpo {
+    background-color: rgba(29, 30, 44, 1);
 }
+
 /*Mexendo com os IDs*/
-#nameUser{
+#nameUser {
     display: flex;
     justify-content: end;
     margin-left: 12%;
     border-radius: 10px 0px 0px 10px;
     background: rgba(36, 38, 58, 1);
     color: #fff;
-    box-shadow:  1px 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
 }
-#simuladordeemprestimos{
-    width: 44vw;
+
+
+#simuladordeemprestimos {
+    width: 170%;
+    height: 140%;
     position: relative;
     top: -10px;
-    padding: 12px;
-    left: -70px;
+    padding: 10px;
+    left: -14%;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
 }
-#calculodeemprestimos{
-    width: 40vw;
+
+
+
+#calculodeemprestimos {
+    width: 170%;
+    height: 140%;
     position: relative;
     top: -10px;
-    padding: 12px;
-    left: 230px;
+    padding: 15px;
+    left: 60%;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
 }
-#simuladordeinvestimentos{
-    width: 44vw;
+
+#simuladordeinvestimentos {
+    width: 170%;
+    height: 120%;
     position: relative;
-    top: 0px;
-    padding: 22px;
+    top: 100px;
+    padding: 25px;
     left: -70px;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
 }
-#retornodeinvestimento{
-    width: 40vw;
+
+#retornodeinvestimento {
+    width: 170%;
+    height: 120%;
     position: relative;
-    top: 0px;
-    padding: 22px;
-    left: 230px;
+    top: 100px;
+    padding: 25px;
+    left: 60%;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
 }
+
+#investimentos {
+    height: 8%;
+    width: 40%;
+    background-color: rgba(36, 38, 58, 1);
+    color: aliceblue;
+}
+
+#retornoInicial {
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aqua;
+    top: -30%;
+    margin-left: 50%;
+    font-size: 50px;
+    height: 200%;
+}
+
 /*mexendo com class*/
-.campos{
+.campos {
     background: rgba(36, 38, 58, 1);
     border-radius: 10px 10px 10px 10px;
     color: #fff;
-    box-shadow:  1px 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
 }
-.estiloInputs{
+
+.estiloInputs {
     display: block;
+    height: 15%;
     position: relative;
     margin: -4 auto;
-    border-top: none;
-    border-right: none;
-    border-bottom-color: #fff;
-    border-left-color:#fff ;
+    border-radius: 5%;
+    border-color: aliceblue;
     background-color: transparent;
     color: #fff;
-    bottom: 1%;
 }
-.estiloBotao{
+
+.estiloInputs2 {
+    display: block;
+    height: 10%;
+    position: relative;
+    margin: -4 auto;
+    border-radius: 5%;
+    border-color: aliceblue;
+    background-color: transparent;
+    color: #fff;
+}
+
+.estiloBotao01 {
     border-color: #fff;
     border-radius: 10px 10px 10px 10px;
     text-shadow: none;
     color: aliceblue;
-    background: rgba(36, 38, 58, 1);;
+    background: rgba(36, 38, 58, 1);
 }
+.estiloBotao02 {
+    border-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    text-shadow: none;
+    color: aliceblue;
+    background: rgba(36, 38, 58, 1);
+}
+
 /*Estilo do menu*/
-#caminhosMenu{
+#caminhosMenu {
     position: relative;
     top: -38px;
     right: 10%;
     padding: 11px;
 }
-#teste{
+
+#teste {
     height: 100vh;
 }
-#nameUser>h1{
+
+#nameUser>h1 {
     font-size: 1.5rem;
-    position: relative; 
+    position: relative;
     right: 10%;
 }
-#nameUser>h2{
-    font-size:revert;
+
+#nameUser>h2 {
+    font-size: revert;
     position: relative;
-    top:10px;
+    top: 10px;
 }
-.menu{
+
+.menu {
     width: 10%;
     float: left;
     background: rgba(36, 38, 58, 1);
     height: 713px;
     border-radius: 4px 10px 10px 4px;
-    box-shadow:  1px 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
 }
 
-.menu>ul>li>a{
+.menu>ul>li>a {
     color: #fff;
 }
-#logo{
+
+#logo {
     position: relative;
     width: 32px;
     height: 26px;
     top: -331px;
     left: 133%;
 }
-.imgsMenu{
+
+.imgsMenu {
     width: 40px;
-    height:40px;
+    height: 40px;
     left: 50%;
     position: relative;
 }
-.imgMenuCell{
+
+.imgMenuCell {
     width: 30px;
     height: 30px;
     position: relative;
@@ -135,87 +206,103 @@ main{
     top: 7px;
     visibility: hidden;
 }
-.elementoMenu:hover img{
+
+.elementoMenu:hover img {
     /*Onde faz a imagem sumir*/
     visibility: hidden;
 }
-.textoInicio{
+
+.textoInicio {
     color: #fff;
     position: relative;
-    top:64px;
+    top: 64px;
     left: 50%;
-    visibility:hidden;
+    visibility: hidden;
 }
-.elementoMenu:hover .textoInicio{
+
+.elementoMenu:hover .textoInicio {
     /*Onde faz o texto aparecer*/
     visibility: visible;
 }
-.textoDespesas{
+
+.textoDespesas {
     color: #fff;
     position: relative;
     top: 50px;
     left: 30px;
     visibility: hidden;
 }
-.elementoMenu:hover .textoDespesas{
+
+.elementoMenu:hover .textoDespesas {
     visibility: visible;
 }
-.textoExtrato{
+
+.textoExtrato {
     color: #fff;
     position: relative;
     top: 50px;
     left: 30px;
     visibility: hidden;
 }
-.elementoMenu:hover .textoExtrato{
+
+.elementoMenu:hover .textoExtrato {
     visibility: visible;
 }
-.textoSimulacao{
+
+.textoSimulacao {
     color: #fff;
     position: relative;
     top: 50px;
     left: 30px;
     visibility: hidden;
 }
-.elementoMenu:hover .textoSimulacao{
+
+.elementoMenu:hover .textoSimulacao {
     visibility: visible;
 }
-.textoNoticias{
+
+.textoNoticias {
     color: #fff;
     position: relative;
     top: 50px;
     left: 30px;
     visibility: hidden;
 }
-.elementoMenu:hover .textoNoticias{
+
+.elementoMenu:hover .textoNoticias {
     visibility: visible;
 }
-.textoSobre{
+
+.textoSobre {
     color: #fff;
     position: relative;
     top: 50px;
     left: 30px;
     visibility: hidden;
 }
-.elementoMenu:hover #textoSobre{
+
+.elementoMenu:hover #textoSobre {
     visibility: visible;
 }
-.visibilidadeMenuCell{
-    visibility:visible;
+
+.visibilidadeMenuCell {
+    visibility: visible;
     width: 80vw;
     float: left;
     background: rgba(36, 38, 58, 1);
     height: 100vh;
     border-radius: 4px 10px 10px 4px;
-    box-shadow:  1px 1px 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
     z-index: 1;
     transition-duration: 0.8s;
     transition-delay: 0.1s;
 }
-canvas{
+
+canvas {
     position: relative;
 }
-.textoMenucelular{
+
+.textoMenucelular {
     visibility: visible;
     position: relative;
     left: 22vw;
@@ -227,52 +314,60 @@ canvas{
 
 /*Parte da responsividade*/
 /*computador*/
-@media only screen and (min-width: 860px) and (max-width:1800px){
-    .menu{
+@media only screen and (min-width: 860px) and (max-width:1800px) {
+    .menu {
         height: 100vh;
     }
-    #logo{
-    position: relative;
-    width: 32px;
-    height: 26px;
-    top: 10px;
-    left: 53%;
-}
+
+    #logo {
+        position: relative;
+        width: 32px;
+        height: 26px;
+        top: 10px;
+        left: 53%;
+    }
 
 }
+
 /*tablet*/
-@media only screen and (min-width:481px) and (max-width:850px){
-    .menu{
+@media only screen and (min-width:481px) and (max-width:850px) {
+    .menu {
         height: 100vh;
-        visibility:hidden;
+        visibility: hidden;
         transition-duration: 0.1s;
         transition-delay: 0.1s;
     }
-    #teste{
+
+    #teste {
         position: fixed;
         height: 100%;
         width: 35vw;
     }
-    main{
+
+    main {
         position: relative;
         right: 15em;
         top: 10vh;
-     }
-     #caminhosMenu{
+    }
+
+    #caminhosMenu {
         right: 0vw;
         top: -17vh;
-     }
-     #logo{
+    }
+
+    #logo {
         width: 50px;
         height: 50px;
         top: -69vw;
         left: 57%;
         visibility: visible;
-     }
-     #caminhosMenus>a{
+    }
+
+    #caminhosMenus>a {
         visibility: hidden;
     }
-    .imgMenuCell{
+
+    .imgMenuCell {
         visibility: visible;
         z-index: 1;
         width: 50px;
@@ -281,92 +376,109 @@ canvas{
         right: 93vw;
         top: 7px;
     }
-    .menuCell{
+
+    .menuCell {
         width: 30vw;
     }
-    #simuladordeemprestimos{
+
+    #simuladordeemprestimos {
         width: 90vw;
         position: relative;
         left: 5vw;
         top: -5em;
     }
-    #calculodeemprestimos{
+
+    #calculodeemprestimos {
         width: 90vw;
         position: relative;
         left: -16vw;
         top: 12em;
     }
-    #simuladordeinvestimentos{
+
+    #simuladordeinvestimentos {
         width: 90vw;
         position: relative;
         left: 5vw;
         top: 14em;
     }
-    #retornodeinvestimento{
+
+    #retornodeinvestimento {
         width: 90vw;
         height: 65vw;
         position: relative;
         left: -16vw;
         top: 49em;
     }
-    .textoMenucelular{
+
+    .textoMenucelular {
         left: 13vw;
         top: 5vh;
     }
 }
+
 /*celular*/
-@media only screen and (min-width: 360px) and (max-width:700px){
-    .menu{
+@media only screen and (min-width: 360px) and (max-width:700px) {
+    .menu {
         height: 100vh;
-        visibility:hidden;
+        visibility: hidden;
         transition-duration: 0.1s;
         transition-delay: 0.1s;
     }
-    main{
+
+    main {
         left: -2vh;
     }
-    #teste{
+
+    #teste {
         position: fixed;
     }
-    #caminhosMenu{
+
+    #caminhosMenu {
         right: -6vw;
         top: -6vh;
     }
-    #caminhosMenus>a{
+
+    #caminhosMenus>a {
         visibility: hidden;
     }
-     .imgMenuCell{
-         visibility: visible;
-         z-index: 1;
-     }
-     #simuladordeemprestimos{
+
+    .imgMenuCell {
+        visibility: visible;
+        z-index: 1;
+    }
+
+    #simuladordeemprestimos {
         width: 89vw;
         position: relative;
         left: -55vw;
     }
-    #calculodeemprestimos{
+
+    #calculodeemprestimos {
         width: 89vw;
         position: relative;
         left: -65vw;
         top: 16em
     }
-    #simuladordeinvestimentos{
+
+    #simuladordeinvestimentos {
         width: 89vw;
         position: relative;
         left: -55vw;
         top: 18em;
     }
-    #retornodeinvestimento{
+
+    #retornodeinvestimento {
         width: 89vw;
         position: relative;
         left: -65vw;
         top: 46em;
     }
-     #logo{
+
+    #logo {
         width: 34px;
         height: 38px;
         top: -49%;
         left: 78%;
-    
-     }
+
+    }
 }
