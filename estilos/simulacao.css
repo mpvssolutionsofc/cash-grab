@@ -92,13 +92,14 @@ main {
 }
 
 #retornoInicial {
+    position:absolute;
     font-family: 'Poppins', sans-serif;
     font-size: bold;
     color: aqua;
     top: -30%;
-    margin-left: 50%;
-    font-size: 50px;
-    height: 200%;
+    margin-left: 10%;
+    font-size: 40px;
+    top: 15%;
 }
 
 /*mexendo com class*/
@@ -129,6 +130,11 @@ main {
     border-color: aliceblue;
     background-color: transparent;
     color: #fff;
+}
+
+.headerClass {
+    margin-left: 10% ;
+    margin-top: 0%;
 }
 
 .estiloBotao01 {

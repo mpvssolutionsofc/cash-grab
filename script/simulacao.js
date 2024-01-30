@@ -51,10 +51,10 @@ function capturar() {
           return false
           }
     
-    var retornoInicial = document.getElementById("retornoInicial").innerHTML = (valorinv*Math.pow((1+jurosinv),mesesinv)).toFixed(2);
-    var retornoMensal = document.getElementById("retornoMensal").innerHTML = ((aporte*(Math.pow(1+jurosinv,mesesinv)-1))/jurosinv).toFixed(2);
+    var retornoInicial = document.getElementById("retornoInicial").innerHTML = (valorinv*Math.pow((1+jurosinv),mesesinv)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var retornoMensal = document.getElementById("retornoMensal").innerHTML = ((aporte*(Math.pow(1+jurosinv,mesesinv)-1))/jurosinv).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     var retornoTotal =  (parseFloat(retornoInicial) + parseFloat(retornoMensal));
-    document.getElementById("retornoTotal").innerHTML = parseFloat(retornoTotal.toFixed(2));
+    document.getElementById("retornoTotal").innerHTML = parseFloat(retornoTotal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }  
 
 /*Recuperando dados do localStorage*/
