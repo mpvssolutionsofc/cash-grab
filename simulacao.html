@@ -79,6 +79,7 @@
     <main>
         <div id="simuladordeemprestimos" class="campos">
             <h3>Simulador de emprestimos</h3>
+            <br>
             <header>Qual valor você precisa?(R$)</header>
             <input type="number" id="valorEmprestimo" class="ocultarElemento estiloInputs"
                 placeholder="digite o valor em (R$)">
@@ -91,15 +92,18 @@
         </div>
         <div id="calculodeemprestimos" class="campos">
             <h3>Calculo de emprestimos</h3>
-            <header>Valor da parcela R$ <b>
+            <br>
+            <header class="headerClass">Valor da parcela:<b>
                     <h7 id="parcelas"></h7>
                 </b></header>
+            <br>    
             <br>
-            <header>Total dos Juros R$ <b>
+            <header class="headerClass">Total dos Juros:<b>
                     <h7 id="jurosemp"></h7>
                 </b></header>
+            <br>    
             <br>
-            <header>Valor total do montante R$ <b>
+            <header class="headerClass">Valor total do montante:<b>
                     <h7 id="montante"></h7>
                 </b></header>
         </div>
@@ -107,6 +111,7 @@
         <!--Simulador de Investimentos-->
         <div id="simuladordeinvestimentos" class="campos">
             <h3>Simulador de investimentos</h3>
+            <br>
             <header>Qual investimento voce busca?</header>
             <select name="investimentos" id="investimentos">
                 <option value="1">CDB</option>
@@ -133,7 +138,7 @@
         <div id="retornodeinvestimento" class="campos">
             <h3>Retorno de Investimentos</h3>
             <br>
-            <header class="headerClass">Retorno do aporte inicial R$<b>
+            <header class="headerClass">Retorno do aporte inicial:<b>
                     <h7 id="retornoInicial"></h7>
                 </b></header>
             <br>
@@ -141,11 +146,11 @@
             <header class="headerClass">Retorno do aporte mensal:
                 <br> 
                 <b>
-                    <h7 R$ id="retornoMensal"></h7>
+                    <h7 id="retornoMensal"></h7>
                 </b></header>
             <br>
             <br>
-            <header>Retorno total do investimento R$ 
+            <header class="headerClass">Retorno total do investimento: 
                 <br>
                 <b>
                     <h7 id="retornoTotal"></h7>

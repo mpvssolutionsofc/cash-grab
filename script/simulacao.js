@@ -18,9 +18,9 @@ function capturar() {
         return false
         }
 
-    document.getElementById("parcelas").innerHTML = (valor*Math.pow((1+juros),meses)/meses).toFixed(2);
-    document.getElementById("jurosemp").innerHTML = (valor*Math.pow((1+juros),meses)-(valor)).toFixed(2);
-    document.getElementById("montante").innerHTML = (valor*Math.pow((1+juros),meses)).toFixed(2);
+    document.getElementById("parcelas").innerHTML = (valor*Math.pow((1+juros),meses)/meses).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    document.getElementById("jurosemp").innerHTML = (valor*Math.pow((1+juros),meses)-(valor)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    document.getElementById("montante").innerHTML = (valor*Math.pow((1+juros),meses)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 }
 
 /*calculo do investimento*/
@@ -50,11 +50,15 @@ function capturar() {
           document.getElementById("mesesInvestimento").focus();
           return false
           }
-    
-    var retornoInicial = document.getElementById("retornoInicial").innerHTML = (valorinv*Math.pow((1+jurosinv),mesesinv)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var retornoMensal = document.getElementById("retornoMensal").innerHTML = ((aporte*(Math.pow(1+jurosinv,mesesinv)-1))/jurosinv).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-    var retornoTotal =  (parseFloat(retornoInicial) + parseFloat(retornoMensal));
-    document.getElementById("retornoTotal").innerHTML = parseFloat(retornoTotal).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var retornoInicialValue = valorinv * Math.pow((1 + jurosinv), mesesinv);
+    var retornoMensalValue = aporte * ((Math.pow(1 + jurosinv, mesesinv)- 1)/ jurosinv);
+
+    var retornoInicial = document.getElementById("retornoInicial");
+    retornoInicial.innerHTML = retornoInicialValue.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var retornoMensal = document.getElementById("retornoMensal");
+    retornoMensal.innerHTML = retornoMensalValue.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    var retornoTotal = retornoInicialValue + retornoMensalValue;
+    document.getElementById("retornoTotal").innerHTML = retornoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }  
 
 /*Recuperando dados do localStorage*/

@@ -23,7 +23,7 @@ main {
 }
 
 #corpo {
-    background-color: rgba(29, 30, 44, 1);
+    background-color: #000;
 }
 
 /*Mexendo com os IDs*/
@@ -32,9 +32,8 @@ main {
     justify-content: end;
     margin-left: 12%;
     border-radius: 10px 0px 0px 10px;
-    background: rgba(36, 38, 58, 1);
+    background: #000;
     color: #fff;
-    box-shadow: 1px 1px 1px 1px #000;
 }
 
 
@@ -43,7 +42,7 @@ main {
     height: 140%;
     position: relative;
     top: -10px;
-    padding: 10px;
+    padding: 25px;
     left: -14%;
     font-family: 'Poppins', sans-serif;
     font-size: bold;
@@ -56,7 +55,7 @@ main {
     height: 140%;
     position: relative;
     top: -10px;
-    padding: 15px;
+    padding: 25px;
     left: 60%;
     font-family: 'Poppins', sans-serif;
     font-size: bold;
@@ -66,7 +65,7 @@ main {
     width: 170%;
     height: 120%;
     position: relative;
-    top: 100px;
+    top: 120px;
     padding: 25px;
     left: -70px;
     font-family: 'Poppins', sans-serif;
@@ -77,7 +76,7 @@ main {
     width: 170%;
     height: 120%;
     position: relative;
-    top: 100px;
+    top: 120px;
     padding: 25px;
     left: 60%;
     font-family: 'Poppins', sans-serif;
@@ -87,24 +86,71 @@ main {
 #investimentos {
     height: 8%;
     width: 40%;
-    background-color: rgba(36, 38, 58, 1);
+    background-color: transparent;
     color: aliceblue;
+    border-color: transparent;
 }
 
 #retornoInicial {
     position:absolute;
     font-family: 'Poppins', sans-serif;
     font-size: bold;
-    color: aqua;
-    top: -30%;
+    color: aliceblue;
+    top: 15%;
     margin-left: 10%;
     font-size: 40px;
-    top: 15%;
+}
+
+#retornoMensal {
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aliceblue;
+    top: 28%;
+    margin-left: 34%;
+    font-size: 40px;
+}
+
+#retornoTotal {
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aliceblue;
+    top: 40%;
+    margin-left: 34%;
+    font-size: 40px;
+}
+#parcelas {
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aliceblue;
+    top: 17%;
+    margin-left: 15%;
+    font-size: 40px;
+}
+#jurosemp {
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aliceblue;
+    top: 33%;
+    margin-left: 16.5%;
+    font-size: 40px;
+}
+#montante {
+    position:absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: bold;
+    color: aliceblue;
+    top: 50%;
+    margin-left: 7.7%;
+    font-size: 40px;
 }
 
 /*mexendo com class*/
 .campos {
-    background: rgba(36, 38, 58, 1);
+    background-image: linear-gradient(180deg, rgb(31, 32, 41), rgb(37, 38, 46));
     border-radius: 10px 10px 10px 10px;
     color: #fff;
     box-shadow: 1px 1px 1px 1px #000;
@@ -112,11 +158,11 @@ main {
 
 .estiloInputs {
     display: block;
-    height: 15%;
+    height: 10%;
     position: relative;
     margin: -4 auto;
     border-radius: 5%;
-    border-color: aliceblue;
+    border-color: transparent;
     background-color: transparent;
     color: #fff;
 }
@@ -127,7 +173,7 @@ main {
     position: relative;
     margin: -4 auto;
     border-radius: 5%;
-    border-color: aliceblue;
+    border-color: transparent;
     background-color: transparent;
     color: #fff;
 }
@@ -177,9 +223,9 @@ main {
 }
 
 .menu {
-    width: 10%;
+    width: 7%;
     float: left;
-    background: rgba(36, 38, 58, 1);
+    background: #000;
     height: 713px;
     border-radius: 4px 10px 10px 4px;
     box-shadow: 1px 1px 1px 1px #000;
